@@ -1,0 +1,38 @@
+﻿@using CarInsuranceExercise.Models
+@model List<Customer>
+
+    <div class="container">
+        <div class="row justify-content-center col-12 no-gutters">
+            <h2 class="m-2 mb-4">Requested Quotes</h2>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email Address</th>
+                    <th scope="col">Quote</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var customer in Model)
+                {
+                    <tr>
+                        <td>
+                            @customer.firstName
+                        </td>
+                        <td>
+                            @customer.lastName
+                        </td>
+                        <td>
+                            @customer.email
+                        </td>
+                        <td>
+                            $@Math.Round(customer.quote, 2)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>

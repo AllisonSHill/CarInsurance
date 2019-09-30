@@ -1,0 +1,15 @@
+﻿@using CarInsuranceExercise.Models
+@model Customer
+
+<div class="container">
+    <div class="row justify-content-center col-12 no-gutters">
+        <div class="card border-dark mb-3" style="max-width: 50rem;">
+            <div class="card-header">You've been approved!</div>
+            <div class="card-body text-dark">
+                <h5 class="card-title">@Model.firstName @Model.lastName  has been approved for @Model.coverageType  Insurance at a rate of:</h5>
+                <h3 class="card-text">$@Math.Round(Model.quote, 2) / month</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
