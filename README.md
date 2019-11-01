@@ -1,8 +1,14 @@
 # Car Insurance
 
-MVC PRACTICAL EXERCISE You've been tasked with building an application for generating quotes for car insurance.
+## C# Course Final Project - Build a Practical MVC Application
 
-REQUIREMENTS You must get the following information from the user: First Name
+### Assignment Details:
+
+You've been tasked with building an application for generating quotes for car insurance.
+
+YOU MUST GET THE FOLLOWING INFORMATION FROM THE USER: 
+
+First Name
 
 Last Name
 
@@ -22,7 +28,9 @@ How many speeding tickets they have.
 
 Would they like full coverage or liability?
 
-Use the following rules to calculate a quote: Start with a base of $50 / month.
+USE THE FOLLOWING RULES TO CALCULATE A QUOTE: 
+
+Start with a base of $50 / month.
 
 If the user is under 25, add $25 to the monthly total.
 
